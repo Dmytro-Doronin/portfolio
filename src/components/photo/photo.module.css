@@ -1,0 +1,59 @@
+.photoBack {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: #000;
+}
+
+.myPhoto {
+    position: absolute;
+
+    left: 25px;
+    top: 25px;
+
+    /*transform: translateX(-50%);*/
+
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+
+    .photoBack {
+        width: 250px;
+        height: 300px;
+    }
+
+    .myPhoto {
+        width: 200px;
+        height: 300px;
+
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 766px){
+    .photoBack {
+        width: 200px;
+        height: 250px;
+    }
+
+    .myPhoto {
+        width: 150px;
+        height: 250px;
+
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .photoBack {
+        width: 150px;
+        height: 200px;
+    }
+
+    .myPhoto {
+        width: 100px;
+        height: 200px;
+
+    }
+}

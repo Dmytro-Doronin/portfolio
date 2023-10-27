@@ -1,0 +1,124 @@
+.previewPage {
+    height: 100vh;
+    min-height: 900px;
+    background-color: var(--main-color);
+}
+
+.infoBlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 950px;
+    padding: 15px;
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.respect {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.aboutBlock {
+    width: 50%;
+}
+
+.textBlock {
+    font-family: 'Rubik';
+    font-size: 1.5em;
+    color: gray;
+    line-height: 175%;
+    margin-bottom: 15px;
+    /*margin-right: 100px;*/
+}
+
+.photo {
+    /*width: 50%;*/
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .infoBlock {
+        width: 700px;
+    }
+
+    .respect {
+        font-family: 'Rubik';
+        font-weight: 600;
+        font-size: 1.6em;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .textBlock {
+        font-family: 'Rubik';
+        font-size: 1.5em;
+        /*margin-right: 50px;*/
+        /*margin-right: 100px;*/
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 766px){
+
+
+    .infoBlock {
+        width: 600px;
+    }
+
+    .respect {
+        font-family: 'Rubik';
+        font-weight: 600;
+        font-size: 1.4em;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .textBlock {
+        font-family: 'Rubik';
+        font-size: 1.3em;
+        /*margin-right: 50px;*/
+        /*margin-right: 100px;*/
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .infoBlock {
+        /*width: 600px;*/
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .respect {
+        font-family: 'Rubik';
+        font-weight: 600;
+        font-size: 1.4em;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .textBlock {
+        font-family: 'Rubik';
+        padding: 10px;
+        font-size: 1.1em;
+        max-width: 400px;
+        text-align: center;
+        /*margin-right: 50px;*/
+        /*margin-right: 100px;*/
+    }
+
+    .aboutBlock {
+        margin-bottom: 30px;
+    }
+}

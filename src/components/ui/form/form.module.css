@@ -1,0 +1,37 @@
+.form {
+    margin: 0 auto;
+    padding: 10px;
+    width: 500px;
+}
+
+.alert {
+    font-family: 'Rubik';
+    font-size: 1.4em;
+    line-height: 175%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+
+    .alert {
+        font-family: 'Rubik';
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 766px){
+
+
+    .alert {
+        font-family: 'Rubik';
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .form {
+        width: auto;
+    }
+}

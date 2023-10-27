@@ -1,0 +1,47 @@
+
+.nav {
+    /*width: 100%;*/
+    text-align: center;
+}
+
+.menuList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.menuListBurger {
+    flex-direction: column;
+}
+
+.menuItem {
+
+}
+
+.menuLink {
+    font-family: 'Rubik';
+    position: relative;
+    font-size: 1.4em;
+    color: gray;
+    text-decoration: none;
+}
+
+/*.menuLink:hover {*/
+/*    color: #fff;*/
+/*}*/
+
+.menuLink:before {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    transition: width 0.35s;
+}
+
+.menuLink:hover:before {
+    width: 100%;
+}

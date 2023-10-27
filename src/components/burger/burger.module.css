@@ -1,0 +1,15 @@
+.burger {
+    width: 40px;
+    height: 40px !important;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.burgerItem {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: white;
+}
+

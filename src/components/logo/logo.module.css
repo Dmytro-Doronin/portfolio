@@ -1,0 +1,15 @@
+.logo {
+    font-family: 'Rubik';
+    font-size: 1.5em;
+    color: white;
+}
+
+.logo:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    margin-top: 15px;
+}
