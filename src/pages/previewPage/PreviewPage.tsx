@@ -6,7 +6,7 @@ import c from './previewPage.module.css'
 
 const PreviewPage = () => {
     return (
-        <div className={c.previewPage}>
+        <div id={'PreviewPage'} className={c.previewPage}>
             <NavBar/>
             <div className={c.infoBlock}>
                 <div className={c.aboutBlock}>

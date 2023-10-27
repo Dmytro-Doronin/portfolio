@@ -9,7 +9,7 @@ import c from './projectPage.module.css'
 
 const ProjectPage = () => {
     return (
-        <div className={c.projectPage}>
+        <div id={'ProjectPage'} className={c.projectPage}>
             <div className={classes.container}>
                 <Title>My projects</Title>
                 <div className={c.projectWrapper}>

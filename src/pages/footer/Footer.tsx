@@ -11,7 +11,7 @@ import classes from '../../app/App.module.css'
 
 const Footer = () => {
     return (
-        <footer className={c.footer}>
+        <footer id={'Footer'} className={c.footer}>
             <div className={classes.container}>
                 <div className={c.footerContainer}>
                     <div className={c.footerItem}>

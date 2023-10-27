@@ -7,7 +7,7 @@ import classes from '../../app/App.module.css'
 
 const ContactPage = () => {
     return (
-        <div className={c.contactPage}>
+        <div id={'ContactPage'} className={c.contactPage}>
             <div className={classes.container}>
                 <Title textColor={'black'}>Contact</Title>
 

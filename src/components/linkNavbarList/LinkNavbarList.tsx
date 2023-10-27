@@ -1,4 +1,4 @@
-
+import { Link } from "react-scroll";
 import c from './linkNavbarList.module.css';
 
 type LinkNavbarListType = {
@@ -17,21 +17,54 @@ const LinkNavbarList = ({ position}: LinkNavbarListType) => {
         : c.menuList
 
 
-
     return (
         <nav className={c.nav}>
             <ul className={listStyle}>
                 <li className={c.menuItem}>
-                    <a href="#" className={c.menuLink}>Main</a>
+                    <Link spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                          to={'PreviewPage'}
+                          className={c.menuLink}
+                    >
+                    Main
+                    </Link>
                 </li>
                 <li className={c.menuItem}>
-                    <a href="#" className={c.menuLink}>Technologies</a>
+                    <Link to={'TechnologiesPage'}
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                          href="#"
+                          className={c.menuLink}
+                    >
+                    Technologies
+                    </Link>
                 </li>
                 <li className={c.menuItem}>
-                    <a href="#" className={c.menuLink}>Projects</a>
+                    <Link  spy={true}
+                           smooth={true}
+                           offset={-70}
+                           duration={500}
+                           to={'ProjectPage'}
+                           href="#"
+                           className={c.menuLink}
+                    >
+                    Projects
+                    </Link>
                 </li>
                 <li className={c.menuItem}>
-                    <a href="#" className={c.menuLink}>Contacts</a>
+                    <Link  spy={true}
+                           smooth={true}
+                           offset={-70}
+                           duration={500}
+                           to={'ContactPage'}
+                           href="#"
+                           className={c.menuLink}
+                    >Contacts
+                    </Link>
                 </li>
             </ul>
         </nav>
