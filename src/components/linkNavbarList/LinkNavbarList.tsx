@@ -37,7 +37,6 @@ const LinkNavbarList = ({ position}: LinkNavbarListType) => {
                           smooth={true}
                           offset={-70}
                           duration={500}
-                          href="#"
                           className={c.menuLink}
                     >
                     Technologies
@@ -49,7 +48,6 @@ const LinkNavbarList = ({ position}: LinkNavbarListType) => {
                            offset={-70}
                            duration={500}
                            to={'ProjectPage'}
-                           href="#"
                            className={c.menuLink}
                     >
                     Projects

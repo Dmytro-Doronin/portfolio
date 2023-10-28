@@ -1,14 +1,15 @@
-import React, {ChangeEvent} from 'react';
+import {ChangeEvent} from 'react';
 import c from './textArea.module.css'
+import {SvgType} from "../../../data/technologiesCardVariable.tsx";
 
 type textAreaType = {
     callback: (item: string) => void
     value: string
     title: string
-    label: string
+    Icon: SvgType
 }
 
-const TextArea = ({callback, value, title, label}: textAreaType) => {
+const TextArea = ({callback, value, title, Icon}: textAreaType) => {
 
     const setItem = (e:ChangeEvent<HTMLTextAreaElement>) => {
         callback(e.target.value)
@@ -25,7 +26,7 @@ const TextArea = ({callback, value, title, label}: textAreaType) => {
             <span
                 className={c.materialSymbols}
             >
-                &#128386;
+                <Icon/>
             </span>
             <label htmlFor='textbow'>{title}</label>
             <div className={c.underline}></div>

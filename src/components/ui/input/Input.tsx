@@ -1,5 +1,5 @@
-import React, {ChangeEvent} from 'react';
-
+import {ChangeEvent} from 'react';
+import {SvgType} from "../../../data/technologiesCardVariable.tsx";
 import c from './input.module.css'
 
 type inputType = {
@@ -7,11 +7,11 @@ type inputType = {
     value: string
     title: string
     required: boolean
-    label: string
+    Icon: SvgType
     type: string
 }
 
-const Input = ({callback, value, title, label, type}: inputType) => {
+const Input = ({callback, value, title, Icon, type}: inputType) => {
 
     const setItem = (e:ChangeEvent<HTMLInputElement>) => {
         callback(e.target.value)
@@ -31,7 +31,7 @@ const Input = ({callback, value, title, label, type}: inputType) => {
             <span
                 className={c.materialSymbols}
             >
-                &#64;
+            <Icon/>
             </span>
             <label htmlFor='textbox'>{title}</label>
             <div className={c.underline}></div>

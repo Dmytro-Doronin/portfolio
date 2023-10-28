@@ -1,9 +1,9 @@
 import NavBar from "../../components/navBar/NavBar";
 import Photo from "../../components/photo/Photo";
-import Button from "../../components/ui/button/Button";
-
+// import {Button} from "../../components/ui/button/Button";
+import { Link } from "react-scroll";
 import c from './previewPage.module.css'
-
+import s from '../../components/ui/button/button.module.css'
 const PreviewPage = () => {
     return (
         <div id={'PreviewPage'} className={c.previewPage}>
@@ -17,7 +17,15 @@ const PreviewPage = () => {
                         similique suscipit voluptate.
 
                     </div>
-                    <Button>My projects</Button>
+                    <Link  spy={true}
+                           smooth={true}
+                           offset={-70}
+                           duration={500}
+                           to={'ProjectPage'}
+                           className={s.mainButton}
+                    >
+                        Projects
+                    </Link>
                 </div>
                 <div className={c.photo}>
                     <Photo/>

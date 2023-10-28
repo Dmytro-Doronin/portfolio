@@ -1,9 +1,9 @@
 
 
-import Github from '../../images/svg/github.svg'
-import Linkedin from '../../images/svg/linkedin.svg'
-import Instagram from '../../images/svg/instagram.svg'
-
+// import Github from '../../images/svg/github.svg'
+// import Linkedin from '../../images/svg/linkedin.svg'
+// import Instagram from '../../images/svg/instagram.svg'
+import GithubSvg from "../../assets/LinksSvg/GithubSvg.tsx";
 
 
 import c from './footer.module.css'
@@ -27,15 +27,15 @@ const Footer = () => {
                         <span>+31685885212</span>
                     </div>
                     <div className={c.linkWrapper}>
-                        <a className={c.link} href="#">
-                            <img src={Github} alt="github"/>
+                        <a className={c.link} href="https://github.com/Dmytro-Doronin">
+                            <GithubSvg/>
                         </a>
-                        <a className={c.link} href="#">
-                            <img src={Linkedin} alt="linkedin"/>
-                        </a>
-                        <a className={c.link} href="#">
-                            <img src={Instagram} alt="instagram"/>
-                        </a>
+                        {/*<a className={c.link} href="#">*/}
+                        {/*    <img src={Linkedin} alt="linkedin"/>*/}
+                        {/*</a>*/}
+                        {/*<a className={c.link} href="#">*/}
+                        {/*    <img src={Instagram} alt="instagram"/>*/}
+                        {/*</a>*/}
                     </div>
                 </div>
                 <hr className={c.line}/>

@@ -1,9 +1,12 @@
-import React, {useState} from 'react';
+import {FormEvent, useState} from 'react';
 import Input from "../input/Input.tsx";
 import TextArea from "../textArea/TextArea.tsx";
 import Button from "../button/Button.tsx";
 
 import c from './form.module.css'
+import UserSvg from "../../../assets/FormSvg/UserSvg.tsx";
+import EmailSvg from "../../../assets/FormSvg/EmailSvg.tsx";
+import MessageSvg from "../../../assets/FormSvg/MessageSvg.tsx";
 
 const Form = () => {
 
@@ -11,9 +14,9 @@ const Form = () => {
     const [email, setEmail] = useState('')
     const [textMessage, setTextMessage] = useState('')
     const [label, setLabel] = useState({
-        name: '&#9786;',
-        email: '&#64;',
-        message: '&#128386;'
+        name: UserSvg,
+        email: EmailSvg,
+        message: MessageSvg
     })
 
     const setNameHandler = (item: string) => {
@@ -28,9 +31,12 @@ const Form = () => {
         setTextMessage(item)
     }
 
-    const sendForm = (e: any) => {
+    const sendForm = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         alert('The form has been submitted')
+        setName('')
+        setEmail("")
+        setTextMessage("")
     }
 
 
@@ -40,19 +46,19 @@ const Form = () => {
             <div className={c.alert}>Please fill out the form on this section to contact with me or send me an email.
                 I will answer you as soon as I receive your message.
             </div>
-            <Input label={label.name}
+            <Input Icon={label.name}
                    required value={name}
                    callback={setNameHandler}
                    title='Name'
                    type={'text'}
             />
-            <Input label={label.email}
+            <Input Icon={label.email}
                    required value={email}
                    callback={setEmailHandler}
                    title='Email'
                    type={'email'}
             />
-            <TextArea label={label.message}
+            <TextArea Icon={label.message}
                       value={textMessage}
                       callback={setTExtMessageHandler}
                       title={'Message'}

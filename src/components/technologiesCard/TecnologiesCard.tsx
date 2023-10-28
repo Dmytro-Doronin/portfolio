@@ -1,50 +1,26 @@
 
 // import {ImgTechnoCArdType} from "../../data/technologiesCardVariable.tsx";
-
+import {ImgTechnoCardType} from "../../data/technologiesCardVariable.tsx";
 import c from './tecnologiesCard.module.css'
 
-type TecnologiesCardType = {
+type TechnologiesCardType = {
     name: string
-    Img: any
+    Img: ImgTechnoCardType
 }
 
 
-const TecnologiesCard = ({name, Img}: TecnologiesCardType) => {
-
-    let cardClass
-
-    switch (name) {
-        case "HTML":
-            cardClass = c.HTML
-            break
-        case "CSS":
-            cardClass = c.CSS
-            break
-        case "JS":
-            cardClass = c.JS
-            break
-        case "GIT":
-            cardClass = c.GIT
-            break
-        case "TYPESCRIPT":
-            cardClass = c.TYPESCRIPT
-            break
-        case "REDUX":
-            cardClass = c.REDUX
-            break
-
-    }
+const TechnologiesCard = ({name, Img}: TechnologiesCardType) => {
 
     return (
-        <a href="#" className={`${c.card} ${cardClass}`}>
+        <div className={`${c.card} ${c[name]}`}>
             <div className={c.cor__cobertura}></div>
             <div className={c.circulo}>
                 <Img/>
             </div>
             <p className={c.name}>{name}</p>
-            <div className={c.arrow}>&#10144;</div>
-        </a>
+            {/*<div className={c.arrow}>&#10144;</div>*/}
+        </div>
     );
 };
 
-export default TecnologiesCard;
+export default TechnologiesCard;

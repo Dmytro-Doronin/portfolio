@@ -4,23 +4,24 @@
 // import GIT  from '../images/svg/git.svg'
 // import TYPESCRIPT  from '../images/svg/typescript.svg'
 // import REDUX  from '../images/svg/redux.svg'
-import GitSvg from '../assets/GitSvg.tsx'
-import HTMLSvg from '../assets/HTMLSvg.tsx'
-import JsSvg from '../assets/JsSvg.tsx'
-import ReduxSvg from '../assets/ReduxSvg.tsx'
-import TypescriptSvg from '../assets/TypescriptSvg.tsx'
-import CssSvg from '../assets/CssSvg.tsx'
-// import {FunctionComponent, SVGProps} from "react";
+import GitSvg from '../assets/TechnologiesSvg/GitSvg.tsx'
+import HTMLSvg from '../assets/TechnologiesSvg/HTMLSvg.tsx'
+import JsSvg from '../assets/TechnologiesSvg/JsSvg.tsx'
+import ReduxSvg from '../assets/TechnologiesSvg/ReduxSvg.tsx'
+import TypescriptSvg from '../assets/TechnologiesSvg/TypescriptSvg.tsx'
+import CssSvg from '../assets/TechnologiesSvg/CssSvg.tsx'
+import ReactSvg from '../assets/TechnologiesSvg/ReactSvg.tsx'
+import {ForwardRefExoticComponent, MemoExoticComponent, RefAttributes, SVGProps} from "react";
 
-// export type ImgTechnoCArdType = FunctionComponent<SVGProps<SVGSVGElement>>
+export type SvgType = MemoExoticComponent<ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref"> & RefAttributes<SVGSVGElement>>>
 
-// type TechoVariablesType = {
-//     id: string
-//     name: string
-//     Img: ImgTechnoCArdType
-// }
+type TechnoVariablesType = {
+    id: string
+    name: string
+    Img: SvgType
+}
 
-export const technologiesCardVariable = [
+export const technologiesCardVariable:TechnoVariablesType[] = [
     {
         id: '1',
         name: 'HTML',
@@ -51,6 +52,11 @@ export const technologiesCardVariable = [
         id: '6',
         name: 'REDUX',
         Img: ReduxSvg
+    },
+    {
+        id: '7',
+        name: 'REACT',
+        Img: ReactSvg
     },
 
 ]
