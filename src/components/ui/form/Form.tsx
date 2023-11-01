@@ -13,7 +13,7 @@ const Form = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [textMessage, setTextMessage] = useState('')
-    const [label, setLabel] = useState({
+    const [label] = useState({
         name: UserSvg,
         email: EmailSvg,
         message: MessageSvg

@@ -1,6 +1,8 @@
 import NavBar from "../../components/navBar/NavBar";
 import Photo from "../../components/photo/Photo";
 // import {Button} from "../../components/ui/button/Button";
+
+// @ts-ignore
 import { Link } from "react-scroll";
 import c from './previewPage.module.css'
 import s from '../../components/ui/button/button.module.css'

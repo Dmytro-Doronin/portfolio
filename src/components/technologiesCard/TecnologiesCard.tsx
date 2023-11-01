@@ -1,11 +1,11 @@
 
 // import {ImgTechnoCArdType} from "../../data/technologiesCardVariable.tsx";
-import {ImgTechnoCardType} from "../../data/technologiesCardVariable.tsx";
+import {SvgType} from "../../data/technologiesCardVariable.tsx";
 import c from './tecnologiesCard.module.css'
 
 type TechnologiesCardType = {
     name: string
-    Img: ImgTechnoCardType
+    Img: SvgType
 }
 
 
