@@ -12,9 +12,16 @@ const PreviewPage = () => {
                 <div className={c.aboutBlock}>
                     <h1 className={c.respect}>HI, MY NAME IS DMYTRO</h1>
                     <div className={c.textBlock}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam amet, consequuntur
-                        dolorum enim fugiat iste itaque labore laudantium nam nobis obcaecati officia perspiciatis quasi
-                        similique suscipit voluptate.
+                        I'm frontend developer with
+                        experience in creating SPA using
+                        React, Redux, TypeScript. I
+                        improving my skills in this direction
+                        and plan to expand them with new
+                        technologies, such as Next.js, Node.js.
+                        I usually spend my free time
+                        solving problems on Codewars and improving my
+                        English. Open to your suggestions.
+
 
                     </div>
                     <Link  spy={true}

@@ -6,7 +6,7 @@ import ProjectPage from "../pages/projectPage/ProjectPage";
 import Footer from "../pages/footer/Footer";
 
 import c from './App.module.css';
-import ContactPage from "../pages/contactPage/ContactPage";
+// import ContactPage from "../pages/contactPage/ContactPage";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <PreviewPage/>
         <TechnologiesPage/>
         <ProjectPage/>
-        <ContactPage/>
+        {/*<ContactPage/>*/}
         <Footer/>
       </div>
   );

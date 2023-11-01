@@ -10,26 +10,10 @@ type ProjectCardDataType = {
 export const projectCardData: Array<ProjectCardDataType> = [
     {
         img: facebook,
-        title: 'Facebook',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam amet, consequuntur\n' +
-            '    dolorum enim fugiat iste itaque labore laudantium nam nobis obcaecati officia perspiciatis quasi\n' +
-            '    similique suscipit voluptate.'
+        title: 'Todolist',
+        text: 'SPA for managing to-do lists and their items..'
     },
 
-    {
-        img: facebook,
-        title: 'ToDo',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam amet, consequuntur\n' +
-            '    dolorum enim fugiat iste itaque labore laudantium nam nobis obcaecati officia perspiciatis quasi\n' +
-            '    similique suscipit voluptate.'
-    },
-    {
-        img: facebook,
-        title: 'Counter',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam amet, consequuntur\n' +
-            '    dolorum enim fugiat iste itaque labore laudantium nam nobis obcaecati officia perspiciatis quasi\n' +
-            '    similique suscipit voluptate.'
-    },
 
 
 ]
