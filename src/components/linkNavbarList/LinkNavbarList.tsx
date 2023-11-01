@@ -1,4 +1,3 @@
-// @ts-ignore
 import { Link } from "react-scroll";
 import c from './linkNavbarList.module.css';
 
