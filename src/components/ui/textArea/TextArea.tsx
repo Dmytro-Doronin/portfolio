@@ -3,22 +3,22 @@ import c from './textArea.module.css'
 import {SvgType} from "../../../data/technologiesCardVariable.tsx";
 
 type textAreaType = {
-    callback: (item: string) => void
+    callback: (item: ChangeEvent<HTMLTextAreaElement>) => void
     value: string
-    title: string
+    title: string,
+    name: string
     Icon: SvgType
 }
 
-const TextArea = ({callback, value, title, Icon}: textAreaType) => {
+const TextArea = ({callback, value, title, Icon, name}: textAreaType) => {
 
-    const setItem = (e:ChangeEvent<HTMLTextAreaElement>) => {
-        callback(e.target.value)
-    }
+
 
     return (
         <div className={c.adTextBox}>
             <textarea
-                onChange={setItem}
+                name={name}
+                onChange={callback}
                 value={value}
                 className={value ? c.hasValue : ''}
                 id='textbow'

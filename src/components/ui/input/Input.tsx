@@ -3,25 +3,22 @@ import {SvgType} from "../../../data/technologiesCardVariable.tsx";
 import c from './input.module.css'
 
 type inputType = {
-    callback: (item: string) => void
+    callback: (item: ChangeEvent<HTMLInputElement>) => void
     value: string
     title: string
     required: boolean
+    name: string
     Icon: SvgType
     type: string
 }
 
-const Input = ({callback, value, title, Icon, type}: inputType) => {
-
-    const setItem = (e:ChangeEvent<HTMLInputElement>) => {
-        callback(e.target.value)
-    }
-
+const Input = ({callback, value, title, Icon, type, name}: inputType) => {
 
     return (
         <div className={c.adTextBox}>
             <input
-                onChange={setItem}
+                name={name}
+                onChange={callback}
                 value={value}
                 className={value ? c.hasValue : ''}
                 id='textbox'
