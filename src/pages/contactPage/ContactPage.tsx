@@ -22,7 +22,7 @@ const ContactPage = () => {
     const sendForm = async (data: SendFormDataType) => {
         const JData =  JSON.stringify(data)
         try {
-            const response = await request('http://localhost:5000/api/getOrder', 'POST', JData, {'Content-type': 'application/json'})
+            const response = await request('https://portfolio-dmytro-doronin.vercel.app/api/getOrder', 'POST', JData, {'Content-type': 'application/json'})
             if (response) {
                 console.log(response)
                 setResponseMessage(response.message)
