@@ -8,12 +8,17 @@ import UserSvg from "../../../assets/FormSvg/UserSvg.tsx";
 import EmailSvg from "../../../assets/FormSvg/EmailSvg.tsx";
 import MessageSvg from "../../../assets/FormSvg/MessageSvg.tsx";
 import {SendFormDataType} from "../../../pages/contactPage/ContactPage.tsx";
+import {Loader} from "../../loader/Loader.tsx";
+import {AlertWindow} from "../../error/AlertWindow.tsx";
 
 type FormType = {
     sendForm: (data: SendFormDataType) => void
+    error?: {message: string}
+    responseMessage?: string
+    loading?: boolean
 }
 
-const Form = ({sendForm}: FormType) => {
+const Form = ({sendForm, loading, error, responseMessage}: FormType) => {
 
     const [dataForm, setDataForm] = useState<SendFormDataType>({
         name: '',
@@ -65,7 +70,12 @@ const Form = ({sendForm}: FormType) => {
                       callback={setDataHandler}
                       title={'Message'}
             />
-            <Button type={'submit'}>Send</Button>
+            <Button disabled={loading} type={'submit'}>Send</Button>
+            <div className={c.infoBlock}>
+                {loading ? <Loader/> : null}
+                {error?.message ? <AlertWindow error={error.message}/> : null}
+                {responseMessage ? <AlertWindow sendingMessage={responseMessage}/> : null}
+            </div>
         </form>
     );
 };

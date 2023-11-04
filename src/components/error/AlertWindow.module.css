@@ -1,0 +1,16 @@
+
+.error {
+    border: 2px solid red;
+    color: red;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.done {
+    border: 2px solid springgreen;
+    color: springgreen;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
