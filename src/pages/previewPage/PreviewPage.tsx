@@ -20,11 +20,6 @@ const PreviewPage = () => {
                         improving my skills in this direction
                         and plan to expand them with new
                         technologies, such as Next.js, Node.js.
-                        I usually spend my free time
-                        solving problems on Codewars and improving my
-                        English. Open to your suggestions.
-
-
                     </div>
                     <Link  spy={true}
                            smooth={true}

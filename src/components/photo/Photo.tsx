@@ -1,4 +1,4 @@
-import MyPhoto from '../../images/photo.jpg'
+import MyPhoto from '../../images/IMG_E0445.jpg'
 
 import c from './photo.module.css'
 
