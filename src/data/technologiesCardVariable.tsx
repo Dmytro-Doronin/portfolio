@@ -1,11 +1,4 @@
-// import HTML from '../images/svg/html.svg'
-// import CSS from '../images/svg/css.svg'
-// import JS from '../images/svg/js.svg'
-// import GIT  from '../images/svg/git.svg'
-// import TYPESCRIPT  from '../images/svg/typescript.svg'
-// import REDUX  from '../images/svg/redux.svg'
 import GitSvg from '../assets/TechnologiesSvg/GitSvg.tsx'
-import HTMLSvg from '../assets/TechnologiesSvg/HTMLSvg.tsx'
 import JsSvg from '../assets/TechnologiesSvg/JsSvg.tsx'
 import ReduxSvg from '../assets/TechnologiesSvg/ReduxSvg.tsx'
 import TypescriptSvg from '../assets/TechnologiesSvg/TypescriptSvg.tsx'
@@ -23,41 +16,36 @@ type TechnoVariablesType = {
 
 export const technologiesCardVariable:TechnoVariablesType[] = [
     {
-        id: '1',
-        name: 'HTML',
-        Img: HTMLSvg
-
-    },
-    {
         id: '2',
-        name: 'CSS',
-        Img: CssSvg
-    },
-    {
-        id: '3',
         name: 'JS',
         Img: JsSvg
     },
     {
-        id: '4',
-        name: 'GIT',
-        Img: GitSvg
+        id: '3',
+        name: 'REACT',
+        Img: ReactSvg
     },
     {
-        id: '5',
-        name: 'TYPESCRIPT',
-        Img: TypescriptSvg
-    },
-    {
-        id: '6',
+        id: '7',
         name: 'REDUX',
         Img: ReduxSvg
     },
     {
-        id: '7',
-        name: 'REACT',
-        Img: ReactSvg
+        id: '4',
+        name: 'CSS',
+        Img: CssSvg
     },
+    {
+        id: '5',
+        name: 'GIT',
+        Img: GitSvg
+    },
+    {
+        id: '6',
+        name: 'TYPESCRIPT',
+        Img: TypescriptSvg
+    },
+
 
 ]
 

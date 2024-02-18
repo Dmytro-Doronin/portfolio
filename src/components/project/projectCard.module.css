@@ -1,7 +1,6 @@
 .projectCard {
     width: 400px;
     margin-bottom: 20px;
-
 }
 
 .imgContainer {
@@ -10,8 +9,6 @@
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
-
 }
 
 .imgContainer:hover > div {
@@ -32,7 +29,7 @@
     height: 100%;
     background-color: #000;
     z-index: 3;
-    opacity: 0.3;
+    opacity: 0.5;
 
 }
 
@@ -56,6 +53,19 @@
     color: gray;
     font-size: 1.4em;
     line-height: 175%;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link:first-child {
+    color: #ffffff;
+}
+
+.button:first-child {
+    margin-right: 20px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px){

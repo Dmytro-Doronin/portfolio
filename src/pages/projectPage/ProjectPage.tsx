@@ -14,7 +14,13 @@ const ProjectPage = () => {
                 <Title>My projects</Title>
                 <div className={c.projectWrapper}>
                     {projectCardData.map(card => {
-                        return <ProjectCard img={card.img} title={card.title} text={card.text} key={card.title}/>
+                        return <ProjectCard
+                            linkOnDemo={card.linkOnDemo}
+                            linkOnGithub={card.linkOnGithub}
+                            img={card.img}
+                            title={card.title}
+                            text={card.text}
+                            key={card.title}/>
                     })}
                 </div>
             </div>

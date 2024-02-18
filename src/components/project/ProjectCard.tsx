@@ -8,16 +8,23 @@ type ProjectCardProps = {
     img: string
     title: string
     text: string
+    linkOnGithub: string
+    linkOnDemo: string
 }
 
-const ProjectCard = ({img, title, text}: ProjectCardProps) => {
+const ProjectCard = ({img, title, text, linkOnGithub, linkOnDemo}: ProjectCardProps) => {
 
 
     return (
         <div className={c.projectCard}>
             <div className={c.imgContainer}>
                 <div className={c.imgModal}>
-                    <Button>View</Button>
+                    <Button>
+                        <a className={c.link} href={linkOnDemo}>Demo</a>
+                    </Button>
+                    <Button>
+                        <a className={c.link} href={linkOnGithub}>Github</a>
+                    </Button>
                 </div>
                 <img className={c.cardImg} src={img} alt="ads"/>
 
