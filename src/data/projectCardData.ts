@@ -12,18 +12,14 @@ type ProjectCardDataType = {
 
 export const projectCardData: Array<ProjectCardDataType> = [
     {
-        img: todo2,
-        title: 'Todolist',
-        linkOnGithub: 'https://github.com/Dmytro-Doronin/ToDoListWithVite',
-        linkOnDemo: 'https://to-do-list-with-vite-weld.vercel.app/',
-        text: 'SPA for managing to-do lists and their items. Technologies: React, Redux, Material-Ui, TS.'
-    },
-    {
         img: cards,
         title: 'Quiz cards',
         linkOnGithub: 'https://github.com/Dmytro-Doronin/flash-cards',
         linkOnDemo: 'https://flash-cards-ruby-two.vercel.app/',
-        text: 'This is a project - Learning by Cards. Technologies: React, Redux, RTK-Query, SCSS, TS.'
+        text: 'An interactive learning platform designed to help users study and memorize information using flashcards. ' +
+            'The application allows creating, editing, and organizing card sets for efficient learning. ' +
+            'Built with React and TypeScript for a robust and scalable frontend, Redux and RTK-Query for state management and API handling, ' +
+            'and styled with SCSS for a modern and responsive user interface.'
     },
     {
         img: blogs,
