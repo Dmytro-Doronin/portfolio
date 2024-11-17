@@ -1,4 +1,3 @@
-import todo2 from '../images/todo2.png'
 import cards from '../images/cards.png'
 import blogs from '../images/blogs.png'
 type ProjectCardDataType = {
