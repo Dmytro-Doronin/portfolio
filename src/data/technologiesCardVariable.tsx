@@ -1,10 +1,10 @@
 import GitSvg from '../assets/TechnologiesSvg/GitSvg.tsx'
 import JsSvg from '../assets/TechnologiesSvg/JsSvg.tsx'
-import ReduxSvg from '../assets/TechnologiesSvg/ReduxSvg.tsx'
 import TypescriptSvg from '../assets/TechnologiesSvg/TypescriptSvg.tsx'
 import CssSvg from '../assets/TechnologiesSvg/CssSvg.tsx'
-import ReactSvg from '../assets/TechnologiesSvg/ReactSvg.tsx'
+import NgRxSvg from '../assets/TechnologiesSvg/NgRxSvg.tsx'
 import {ForwardRefExoticComponent, MemoExoticComponent, RefAttributes, SVGProps} from "react";
+import AngularSvg from "../assets/TechnologiesSvg/AngularSvg.tsx";
 
 export type SvgType = MemoExoticComponent<ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref"> & RefAttributes<SVGSVGElement>>>
 
@@ -20,32 +20,41 @@ export const technologiesCardVariable:TechnoVariablesType[] = [
         name: 'JS',
         Img: JsSvg
     },
+    // {
+    //     id: '3',
+    //     name: 'REACT',
+    //     Img: ReactSvg
+    // },
+    // {
+    //     id: '4',
+    //     name: 'REDUX',
+    //     Img: ReduxSvg
+    // },
     {
-        id: '3',
-        name: 'REACT',
-        Img: ReactSvg
+        id: '8',
+        name: 'ANGULAR',
+        Img: AngularSvg
     },
     {
-        id: '7',
-        name: 'REDUX',
-        Img: ReduxSvg
+        id: '9',
+        name: 'NGRX',
+        Img: NgRxSvg
     },
     {
-        id: '4',
+        id: '5',
         name: 'CSS',
         Img: CssSvg
     },
     {
-        id: '5',
+        id: '6',
         name: 'GIT',
         Img: GitSvg
     },
     {
-        id: '6',
+        id: '7',
         name: 'TYPESCRIPT',
         Img: TypescriptSvg
     },
-
 
 ]
 

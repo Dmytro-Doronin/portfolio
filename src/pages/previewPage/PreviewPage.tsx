@@ -16,10 +16,10 @@ const PreviewPage = () => {
                     <div className={c.textBlock}>
                         I'm frontend developer with
                         experience in creating SPA using
-                        React, Redux, TypeScript. I
+                        Angular, NgRx, TypeScript. I
                         improving my skills in this direction
                         and plan to expand them with new
-                        technologies, such as Next.js, Node.js.
+                        technologies.
                     </div>
                     <Link  spy={true}
                            smooth={true}
