@@ -14,12 +14,8 @@ const PreviewPage = () => {
                 <div className={c.aboutBlock}>
                     <h1 className={c.respect}>HI, MY NAME IS DMYTRO</h1>
                     <div className={c.textBlock}>
-                        I'm frontend developer with
-                        experience in creating SPA using
-                        Angular, NgRx, TypeScript. I
-                        improving my skills in this direction
-                        and plan to expand them with new
-                        technologies.
+                        I'm a frontend developer with experience in creating SPAs using Angular, NgRx, and TypeScript.
+                        I'm improving my skills in this field and plan to expand them by learning new technologies.
                     </div>
                     <Link  spy={true}
                            smooth={true}
